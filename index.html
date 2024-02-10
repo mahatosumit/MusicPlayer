@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <div class="menu-bar">
+            <div class="back"><button ><i class="fa-solid fa-angle-left"></i></button></div>
+            <div class="menu">
+            <button ><i class="fa-solid fa-bars"></i></button>
+        </div>
+        </div>
+        <div class="imgg">
+
+            <img class="image" src="./pl.png">
+            <h1>Teri Baaton Mein Aisa Uljha Jiya </h1>
+            <audio controls id="song">
+                <source src="./videoplayback.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+        </div>
+        <div class="control">
+            <button><i class="fa-solid fa-backward"></i></button>
+            <button onclick="playPause()"><i class="fa-solid fa-play" id="icon"></i></button>
+            <button><i class="fa-solid fa-forward"></i></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
